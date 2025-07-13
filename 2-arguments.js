@@ -1,9 +1,16 @@
-const args = process.argv.slice(2);
+function arg(name){
 
-if (args === 0){
-    console.log("No argument");
-}else if(args === 1){
-    console.log("Argument found");
-}else {
-    console.log("Argument found");
-}
+    if (name == undefined){
+    console.log("No argument");}
+    else if (arguments.length==1){
+        console.log("Argument found");
+    }
+    else {
+    console.log("Argument found");}
+   }
+
+   arg();
+   arg("best");
+   arg("best school");
+
+
